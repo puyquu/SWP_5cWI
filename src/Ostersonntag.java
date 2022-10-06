@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class Oster {
+public class Ostersonntag {
 
     public static void main(String[] args) {
         Scanner Year = new Scanner(System.in);
