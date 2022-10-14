@@ -1,4 +1,4 @@
-/**
+package I_BasisAlgorithmen; /**
  * @author Emanuel Zech
  * <p>
  * created on 30.09.2022
@@ -19,10 +19,10 @@ public class Ostersonntag {
         int W = (N+Q+31-M) % 7;
         int P = 25-M-W;
         if (P>0){
-            System.out.println("Ostersonntag ist der " + P + ". April");
+            System.out.println("BasisAlgorithmen.Ostersonntag ist der " + P + ". April");
 
         }else{
-            System.out.println("Ostersonntag ist der " + P+31 + ". März");
+            System.out.println("BasisAlgorithmen.Ostersonntag ist der " + P+31 + ". März");
 
         }
     }
