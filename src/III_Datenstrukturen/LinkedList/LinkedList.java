@@ -27,12 +27,34 @@ public class LinkedList implements HTLList {
 
     @Override
     public int get(int index) {
+        Node actual = root;
+        int counter = 0;
+        while (actual.getNext() != null) {
+            if (counter == index) {
+                return actual.getValue();
+            } else {
+                counter++;
+                actual = actual.getNext();
+            }
 
+        }
         return -1;
     }
 
     @Override
     public void remove(int index) {
-
+        Node actual = root;
+        int counter = 0;
+        while (actual.getNext() != null) {
+            if (counter == index) {
+                while (actual.getNext() != null) {
+                    actual.setValue(actual.getNext().getValue());
+                    actual = actual.getNext();
+                }
+            } else {
+                counter++;
+                actual = actual.getNext();
+            }
+        }
     }
 }
