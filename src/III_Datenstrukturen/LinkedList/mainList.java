@@ -5,7 +5,7 @@ package III_Datenstrukturen.LinkedList;
  * <p>
  * created on 10.11.2022
  */
-public class main {
+public class mainList {
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.add(4);
