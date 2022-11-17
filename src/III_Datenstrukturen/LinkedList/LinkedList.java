@@ -1,6 +1,7 @@
 package III_Datenstrukturen.LinkedList;
 
 import III_Datenstrukturen.HTLList;
+import III_Datenstrukturen.Node;
 
 /**
  * @author Emanuel Zech

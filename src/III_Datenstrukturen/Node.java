@@ -1,4 +1,4 @@
-package III_Datenstrukturen.Stack;
+package III_Datenstrukturen;
 
 /**
  * @author Emanuel Zech

@@ -1,7 +1,7 @@
 package III_Datenstrukturen.Stack;
 
 import III_Datenstrukturen.HTLStack;
-import java.util.EmptyStackException;
+import III_Datenstrukturen.Node;
 
 /**
  * @author Emanuel Zech
