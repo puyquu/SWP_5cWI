@@ -13,6 +13,6 @@ public class mainQueue {
         q.enqueue(4);
         System.out.println(q.dequeue());
         System.out.println(q.dequeue());
-
+        System.out.println(q.dequeue());
     }
 }

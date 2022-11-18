@@ -10,7 +10,7 @@ import III_Datenstrukturen.Node;
  */
 public class Queue implements HTLQueue {
     int length = 0;
-    Node first, rear = null;
+    Node first;
 
     @Override
     public void enqueue(int value) {
@@ -18,10 +18,12 @@ public class Queue implements HTLQueue {
         if(first == null){
             first = temp;
         }else{
-            rear.setNext(temp);
+            Node actual = first;
+            while(actual.getNext() != null) {
+                actual = actual.getNext();
+            }
+            actual.setNext(temp);
         }
-        rear  = temp;
-        length++;
     }
 
     @Override
@@ -34,10 +36,6 @@ public class Queue implements HTLQueue {
         }
         int result = first.getValue();
         first = first.getNext();
-        length--;
-        if(first==null){
-            rear = null;
-        }
         return result;
     }
 }
