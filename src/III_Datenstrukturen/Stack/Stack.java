@@ -19,7 +19,6 @@ public class Stack implements HTLStack {
         temp.setNext(top);
         top = temp;
         length++;
-
     }
 
     @Override

@@ -47,7 +47,11 @@ public class LinkedList implements HTLList {
         Node actual = root;
         int counter = 0;
         while (actual.getNext() != null) {
-            if (counter == index) {
+            if (index == 0){
+                root  = root.getNext();
+                return;
+            }
+            else if(counter == index){
                 while (actual.getNext() != null) {
                     actual.setValue(actual.getNext().getValue());
                     actual = actual.getNext();
